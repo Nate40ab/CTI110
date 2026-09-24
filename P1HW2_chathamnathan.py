@@ -13,14 +13,14 @@ food_estimate = int(input("Enter estimated amount for food: "))
 leftover_funds = budget_value - fuel_estimate - hotel_estimate- food_estimate
 
 print("----Travel Expenses----")
-print("location:",travel_loc)
-print("Initial Budget:",budget_value)
-print("fuel:",fuel_estimate)
-print("Accomodation",hotel_estimate)
-print("food:", food_estimate)
+print(f"{'location':<20}travel_loc")
+print(f"{'Initial Budget':<20}${budget_value:<17,.2f}")
+print(f"{'fuel':<20}${fuel_estimate:<17,.2f}")
+print(f"{'Accomodation':<20}${hotel_estimate:<17,.2f}")
+print(f"{'food':<20}${food_estimate:<17,.2f}")
 print()
 print()
-print("Remaining Balance:",leftover_funds)
+print(f"{'Remaining Balance':<20}${leftover_funds:<17,.2f}")
 
 
 
