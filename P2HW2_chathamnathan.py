@@ -36,3 +36,25 @@ print(f"the average of the grades is: {average:.2f}")
 
 #get the number of grades in the list 
 print(f"total number of grades in list: {len(items)}")
+
+# Round the average to the nearest integer 
+average = round(average)
+
+# branching to determine letter grade based on the average
+
+if average >= 90: 
+     grade_report = "A"
+elif average >= 80:
+    grade_report = "B"
+elif average >= 70:
+    grade_report = "c"
+elif average >= 60:
+    grade_report = "D"
+else:
+    grade_report = "F"
+
+
+print()
+
+print(f"Your average is {average}, so your letter grade is {grade_report}")
+
