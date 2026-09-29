@@ -18,7 +18,12 @@ mpg_selection = cars[chosen_vehicle]
 print(f"The {chosen_vehicle} gets {mpg_selection} mpg.") 
 
 #Get miles from the user
-miles = float(input(f"How many miles will you drive in the {chosen_vehicle}"?))
+miles = float(input(f"How many miles will you drive in the {chosen_vehicle}?"))
+
+# calculate gallons of gas needed
+
+fuel_estimate = (miles/mpg_selection)
+print(f"to drive the {chosen_vehicle} {miles} miles you will need {fuel_estimate:.2f} gallons of gas")
 
 
 
