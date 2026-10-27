@@ -44,7 +44,7 @@ while name != "Done":
         grossPay = regPay
 
     # Add to the totals
-    total_overtime += overtimeHours
+    total_overtime += overPay
     total_regular += regPay
     total_gross += grossPay
 
@@ -61,6 +61,6 @@ while name != "Done":
 # Display totals after the loop ends
 print()
 print("Total number of employees:", total_employees)
-print("Total overtime hours:", total_overtime)
+print(f"Total overtime pay: {total_overtime:.2f}")
 print(f"Total regular pay: ${total_regular:.2f}")
 print(f"Total gross pay: ${total_gross:.2f}")
