@@ -1,0 +1,57 @@
+
+print("Welcome to the Quiz Game!")
+print("--------------------------")
+
+score = 0
+
+# Question 1
+answer = input("1. What is the capital of France? ")
+if answer.lower() == "paris":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Paris.")
+
+# Question 2
+answer = input("2. How many days are in a week? ")
+if answer == "7":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is 7.")
+
+# Question 3
+answer = input("3. What planet do we live on? ")
+if answer.lower() == "earth":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Earth.")
+
+# Question 4
+answer = input("4. What is 5 + 5? ")
+if answer == "10":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is 10.")
+
+# Question 5
+answer = input("5. What animal is known as man's best friend? ")
+if answer.lower() == "dog":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The answer is Dog.")
+
+# Display final score
+print("--------------------------")
+print("Quiz Finished!")
+print("Your final score is", score, "out of 5")
+
+if score == 5:
+    print("Excellent job! You got every question right!")
+elif score >= 3:
+    print("Good job! You passed the quiz!")
+else:
+    print("Keep practicing! You can do better!")
